@@ -42,5 +42,8 @@
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/ansonwonggg"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
