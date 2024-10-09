@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/ansonwonggg/app-modal.git"
@@ -42,8 +41,5 @@
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/ansonwonggg"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
