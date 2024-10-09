@@ -22,6 +22,7 @@
     "dist"
   ],
   "scripts": {
+    "build:ci": "pnpm run pre-build && pnpm run build",
     "build": "tsup",
     "pre-build": "pnpm run tsc && pnpm run eslint:check",
     "tsc": "tsc",

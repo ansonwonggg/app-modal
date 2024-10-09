@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "lerna run test",
-    "build": "lerna run build",
+    "build": "lerna run build:ci",
     "pre-build": "lerna run pre-build",
     "tsc": "lerna run tsc",
     "eslint:check": "lerna run eslint:check",
