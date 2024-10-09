@@ -1,0 +1,43 @@
+{
+  // This compiler options is design without thinking of using Class in JS. So there are lots of property about Class being ignored.
+  "compilerOptions": {
+    "rootDir": ".",
+    "strict": true, // Should always keep it true as it will make 'alwaysStrict' & 'noImplicitAny' default to be true. 'noImplicitAny' restrict user to define types which typescript cannot be inferred.
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "baseUrl": ".",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "verbatimModuleSyntax": true, // new property in TS 5.0. It helps to ignore type import when complier to javascript.
+    /* Linting */
+    "allowUnreachableCode": false, // Do not allow unreachable code
+    "noFallthroughCasesInSwitch": true, // Switch statement must have "break", "return" like statement
+    "noImplicitReturns": true, // make sure function return type and code return in the same
+    "noUnusedLocals": true, // shouldn't have unused local variables
+    "noUnusedParameters": true, // shouldn't have unused parameter
+    "noPropertyAccessFromIndexSignature": true, // when there is no implicit field defined in type, user must use a['xxx'] instead of a.xxx
+    "noUncheckedIndexedAccess": true, // supplement property of 'noPropertyAccessFromIndexSignature'. For no implicit field called, typescript will add undefined type.
+    "esModuleInterop": true, // allow "import XX from "XXX".
+    "types": ["vitest/globals", "node"]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "react-app-modal",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansonwhs/react-app-modal.git"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "pre-build": "pnpm run tsc && pnpm run eslint:check",
+    "tsc": "tsc",
+    "eslint:check": "eslint . --max-warnings 10",
+    "eslint:fix": "eslint . --fix --max-warnings 10",
+    "prettier:fix": "prettier . --write",
+    "test": "vitest",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19"
+  },
+  "dependencies": {
+    "modal-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "pnpm run eslint:fix",
+      "pnpm run prettier:fix"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "keywords": [
+    "modal",
+    "pop-up",
+    "react",
+    "reactjs",
+    "hooks"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ansonwhs"
+  }
+}

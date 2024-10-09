@@ -1,0 +1,39 @@
+name: Beta CI Workflow
+
+on:
+  pull_request:
+    branches:
+      - beta
+
+jobs:
+  build:
+    name: CI Workflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install Dependencies
+        run: pnpm install
+      
+      - name: Pre-build
+        run: pnpm run pre-build
+
+      - name: Build Application
+        run: pnpm run build
+      
+      - name: Run Tests
+        run: pnpm run test --silent=true
+
+      
