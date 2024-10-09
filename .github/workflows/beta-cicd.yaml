@@ -5,6 +5,10 @@ on:
     branches:
       - beta
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   cicd:
     name: CI Workflow
