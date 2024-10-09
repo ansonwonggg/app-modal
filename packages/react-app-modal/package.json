@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansonwonggg/packages/react-app-modal.git"
+    "url": "https://github.com/ansonwonggg/app-modal.git"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
