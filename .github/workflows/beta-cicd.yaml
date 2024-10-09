@@ -28,9 +28,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       
-      - name: Pre-build
-        run: pnpm run pre-build
-
       - name: Build Application
         run: pnpm run build
       
