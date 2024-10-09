@@ -1,0 +1,1 @@
+Please refer to [*react-app-modal*](https://www.npmjs.com/package/react-app-modal).

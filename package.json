@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": "true",
   "type": "module",
+  "description": "A library let you easily handle Modal / Dialog state with React Hooks in your lovely React Web Applications.",
   "license": "MIT",
   "scripts": {
     "test": "lerna run test",
