@@ -3,6 +3,7 @@ name: Beta CI-CD Workflow
 on:
   push:
     branches:
+      - main
       - beta
 
 permissions:
@@ -10,8 +11,8 @@ permissions:
   id-token: write
 
 jobs:
-  cicd:
-    name: CI Workflow
+  ci-cd:
+    name: CI-CD Workflow
     runs-on: ubuntu-latest
 
     steps:
