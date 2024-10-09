@@ -30,7 +30,7 @@ const config = defineConfig({
 				functions: 80,
 				lines: 80,
 				branches: 80,
-			}
+			},
 		},
 		clearMocks: true,
 		mockReset: true,

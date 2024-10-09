@@ -16,6 +16,7 @@
 **/pnpm-workspace.yaml
 **/coverage
 **/dist
+lerna.json
 README.md
 LICENSE
 **/*.html

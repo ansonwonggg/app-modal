@@ -35,10 +35,10 @@ jobs:
         run: pnpm run build
       
       - name: Run Tests
-        run: pnpm run test --silent=true
+        run: pnpm run test
 
       - name: Publish to NPM
-        run: npx semantic-release
+        run: pnpm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

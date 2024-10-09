@@ -6,14 +6,17 @@
   "license": "MIT",
   "packageManager": "pnpm@9.12.0",
   "scripts": {
-    "pre-build": "pnpm run tsc && pnpm run eslint:check",
-    "tsc": "tsc",
-    "eslint:check": "eslint . --max-warnings 10",
-    "eslint:fix": "eslint . --fix --max-warnings 10",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "pre-build": "lerna run pre-build",
+    "tsc": "lerna run tsc",
+    "eslint:check": "lerna run eslint:check",
+    "eslint:fix": "lerna run eslint:fix",
     "prettier:fix": "prettier . --write",
     "commitlint": "commitlint --edit",
     "prepare": "husky",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "publish": "lerna exec --concurrency 1 -- npx --no-install semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
@@ -35,8 +38,10 @@
     "husky": "^9.1.6",
     "jest-slow-test-reporter": "^1.0.0",
     "jsdom": "^25.0.1",
+    "lerna": "^8.1.8",
     "lint-staged": "^15.2.10",
     "semantic-release": "^24.1.2",
+    "semantic-release-monorepo": "^8.0.2",
     "ts-node": "^10.9.2",
     "tsup": "^8.3.0",
     "typescript": "^5.5.3",
