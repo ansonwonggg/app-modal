@@ -13,6 +13,7 @@
 **/package.json
 **/package-lock.json
 **/pnpm-lock.yaml
+**/pnpm-workspace.yaml
 **/coverage
 **/dist
 README.md
@@ -22,3 +23,4 @@ LICENSE
 **/.env.*
 .gitignore
 .prettierignore
+.npmrc

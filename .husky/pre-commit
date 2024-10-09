@@ -1,1 +1,6 @@
+cd packages/modal-core
+pnpm run tsc
+cd ../react-app-modal
+pnpm run tsc
+cd ../..
 npx lint-staged

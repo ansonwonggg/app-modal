@@ -34,9 +34,7 @@
     "esModuleInterop": true, // allow "import XX from "XXX".
     "types": ["vitest/globals", "node"]
   },
-  "include": [
-    "src"
-  ],
+  "include": ["eslint.config.js", "prettier.config.js"],
   "exclude": [
     "node_modules"
   ]

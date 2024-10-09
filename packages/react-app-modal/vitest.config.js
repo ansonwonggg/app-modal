@@ -30,7 +30,7 @@ const config = defineConfig({
 				functions: 80,
 				lines: 80,
 				branches: 80,
-			}
+			},
 		},
 		clearMocks: true,
 		mockReset: true,
@@ -41,9 +41,7 @@ const config = defineConfig({
 		bail: 10,
 		watch: false,
 		typecheck: true,
-		setupFiles: [
-			'src/__test__/utils/testSetup.ts'
-		],
+		setupFiles: ['src/__test__/utils/testSetup.ts'],
 	},
 });
 
