@@ -25,9 +25,6 @@
     "eslint:check": "eslint . --max-warnings 10",
     "eslint:fix": "eslint . --fix --max-warnings 10",
     "prettier:fix": "prettier . --write",
-    "test": "vitest",
-    "commitlint": "commitlint --edit",
-    "prepare": "husky",
-    "preinstall": "npx only-allow pnpm"
+    "test": "vitest"
   }
 }
