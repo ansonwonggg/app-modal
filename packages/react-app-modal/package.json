@@ -1,6 +1,6 @@
 {
   "name": "react-app-modal",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "description": "A library let you easily handle Modal / Dialog state with React Hooks in your lovely React Web Applications.",
