@@ -7,12 +7,12 @@
   "license": "MIT",
   "scripts": {
     "test": "lerna run test",
-    "build": "lerna run build:ci --ignore \"examples\"",
-    "pre-build": "lerna run pre-build --ignore \"examples\"",
-    "tsc": "lerna run tsc --ignore \"examples\"",
-    "eslint:check": "lerna run eslint:check --ignore \"examples\"",
-    "eslint:fix": "lerna run eslint:fix --ignore \"examples\"",
-    "prettier:fix": "prettier . --write",
+    "build": "lerna run build:ci",
+    "pre-build": "lerna run pre-build",
+    "tsc": "lerna run tsc",
+    "eslint:check": "lerna run eslint:check",
+    "eslint:fix": "lerna run eslint:fix",
+    "prettier:fix": "prettier --ignore-unknown '**/*' --write",
     "commitlint": "commitlint --edit",
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
@@ -40,6 +40,7 @@
     "jsdom": "^25.0.1",
     "lerna": "^8.1.8",
     "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "semantic-release": "^24.1.2",
     "semantic-release-monorepo": "^8.0.2",
     "ts-node": "^10.9.2",
@@ -49,7 +50,7 @@
     "vitest": "^2.1.1"
   },
   "lint-staged": {
-    "packages/**/*.{ts,tsx}": [
+    "**/*.{ts,tsx}": [
       "pnpm run eslint:fix",
       "pnpm run prettier:fix"
     ]
