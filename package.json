@@ -7,11 +7,11 @@
   "license": "MIT",
   "scripts": {
     "test": "lerna run test",
-    "build": "lerna run build:ci",
-    "pre-build": "lerna run pre-build",
-    "tsc": "lerna run tsc",
-    "eslint:check": "lerna run eslint:check",
-    "eslint:fix": "lerna run eslint:fix",
+    "build": "lerna run build:ci --ignore \"examples\"",
+    "pre-build": "lerna run pre-build --ignore \"examples\"",
+    "tsc": "lerna run tsc --ignore \"examples\"",
+    "eslint:check": "lerna run eslint:check --ignore \"examples\"",
+    "eslint:fix": "lerna run eslint:fix --ignore \"examples\"",
     "prettier:fix": "prettier . --write",
     "commitlint": "commitlint --edit",
     "prepare": "husky",
@@ -49,7 +49,7 @@
     "vitest": "^2.1.1"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": [
+    "packages/**/*.{ts,tsx}": [
       "pnpm run eslint:fix",
       "pnpm run prettier:fix"
     ]
