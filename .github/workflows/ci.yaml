@@ -1,8 +1,9 @@
-name: Beta CI Workflow
+name: CI Workflow
 
 on:
   pull_request:
     branches:
+      - main
       - beta
 
 permissions:
@@ -10,7 +11,7 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  ci:
     name: CI Workflow
     runs-on: ubuntu-latest
 
