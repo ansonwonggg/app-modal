@@ -62,6 +62,8 @@ const Page = () => {
 }
 ```
 
+More examples can found in [here](https://github.com/ansonwonggg/app-modal/tree/main/examples).
+
 ## Motivation
 
 It is often we need to pop-up some important messages or dialogs to let user confirms for further actions. When you happen to have many pages and they both need the same dialog, you may need to embed the shared component in each page you needed. 
