@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansonwonggg/app-modal.git"
+  },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,15 +22,24 @@
     "dist"
   ],
   "scripts": {
+    "build:ci": "pnpm run pre-build && pnpm run build",
     "build": "tsup",
     "pre-build": "pnpm run tsc && pnpm run eslint:check",
     "tsc": "tsc",
     "eslint:check": "eslint . --max-warnings 10",
     "eslint:fix": "eslint . --fix --max-warnings 10",
     "prettier:fix": "prettier . --write",
-    "test": "vitest",
-    "commitlint": "commitlint --edit",
-    "prepare": "husky",
-    "preinstall": "npx only-allow pnpm"
+    "test": "vitest"
+  },
+  "keywords": [
+    "modal",
+    "pop-up",
+    "react",
+    "reactjs",
+    "hooks"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ansonwonggg"
   }
 }

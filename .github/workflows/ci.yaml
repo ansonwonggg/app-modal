@@ -1,12 +1,17 @@
-name: Beta CI Workflow
+name: CI Workflow
 
 on:
   pull_request:
     branches:
+      - main
       - beta
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
-  build:
+  ci:
     name: CI Workflow
     runs-on: ubuntu-latest
 
@@ -26,14 +31,11 @@ jobs:
       
       - name: Install Dependencies
         run: pnpm install
-      
-      - name: Pre-build
-        run: pnpm run pre-build
 
       - name: Build Application
         run: pnpm run build
       
       - name: Run Tests
-        run: pnpm run test --silent=true
+        run: pnpm run test
 
       

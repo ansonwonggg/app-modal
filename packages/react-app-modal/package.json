@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "description": "A library let you easily handle Modal / Dialog state with React Hooks in your lovely React Web Applications.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansonwonggg/packages/react-app-modal.git"
+    "url": "https://github.com/ansonwonggg/app-modal.git"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -22,16 +23,14 @@
     "dist"
   ],
   "scripts": {
+    "build:ci": "pnpm run pre-build && pnpm run build",
     "build": "tsup",
     "pre-build": "pnpm run tsc && pnpm run eslint:check",
     "tsc": "tsc",
     "eslint:check": "eslint . --max-warnings 10",
     "eslint:fix": "eslint . --fix --max-warnings 10",
     "prettier:fix": "prettier . --write",
-    "test": "vitest",
-    "commitlint": "commitlint --edit",
-    "prepare": "husky",
-    "preinstall": "npx only-allow pnpm"
+    "test": "vitest"
   },
   "peerDependencies": {
     "react": "^18 || ^19"

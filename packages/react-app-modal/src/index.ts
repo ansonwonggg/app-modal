@@ -11,3 +11,4 @@ export {
 	useModalDispatch,
 };
 export type { UseModalDispatchReturn, UseModalReturn } from './type';
+export type { InitModal } from 'modal-core';
