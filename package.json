@@ -58,6 +58,5 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "packageManager": "pnpm@9.12.0+sha1.87cb0f58b64bfb9103677375d7e99e12a3ddbf23"
+  }
 }
