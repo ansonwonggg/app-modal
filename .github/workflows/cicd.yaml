@@ -44,9 +44,9 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
 
-          echo ${{ github.ref }}
+          echo ${{ github.ref }} = refs/heads/beta
 
-          if [ ${{ github.ref }} = beta ]; then
+          if [ ${{ github.ref }} = refs/heads/beta  ]; then
             pnpx lerna version --conventional-prerelease --preid beta
           else
             pnpx lerna version --conventional-graduate
