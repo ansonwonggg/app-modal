@@ -5,5 +5,16 @@
     "packages/modal-core",
     "packages/react-app-modal"
   ],
-  "npmClient": "pnpm"
+  "npmClient": "pnpm",
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "message": "chore(release): publish %v",
+      "yes": true
+    },
+    "publish": {
+      "yes": true
+    }
+  }
 }
