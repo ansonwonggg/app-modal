@@ -1,7 +1,6 @@
 {
   "name": "root",
-  "version": "1.0.0",
-  "private": "true",
+  "private": true,
   "type": "module",
   "description": "A library let you easily handle Modal / Dialog state with React Hooks in your lovely React Web Applications.",
   "license": "MIT",
@@ -16,7 +15,7 @@
     "commitlint": "commitlint --edit",
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
-    "publish": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
