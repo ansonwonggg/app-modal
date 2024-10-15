@@ -6,7 +6,7 @@
             alt="Gzip Size"></a>
     <a href="https://www.npmjs.com/package/react-app-modal"><img src="https://img.shields.io/npm/v/react-app-modal.svg?style=flat-square&colorB=51C838"
                                                        alt="NPM Version"></a>
-    <a href="https://github.com/ansonwonggg/react-app-modal/blob/master/LICENSE"><img
+    <a href="https://github.com/ansonwonggg/app-modal/blob/main/LICENSE"><img
             src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License"></a>
     <br>
 </p>
