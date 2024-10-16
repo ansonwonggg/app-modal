@@ -40,19 +40,7 @@ jobs:
         run: pnpm run test
 
       - name: Publish to NPM
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-
-          echo ${{ github.ref }} = refs/heads/beta
-
-          if [ ${{ github.ref }} = refs/heads/beta  ]; then
-            pnpx lerna version --conventional-prerelease --preid beta
-          else
-            pnpx lerna version --conventional-graduate
-          fi
-
-          pnpx lerna publish from-git
+        run: pnpx nx release publish
 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
