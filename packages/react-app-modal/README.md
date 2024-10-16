@@ -6,7 +6,7 @@
             alt="Gzip Size"></a>
     <a href="https://www.npmjs.com/package/react-app-modal"><img src="https://img.shields.io/npm/v/react-app-modal.svg?style=flat-square&colorB=51C838"
                                                        alt="NPM Version"></a>
-    <a href="https://github.com/ansonwonggg/react-app-modal/blob/master/LICENSE"><img
+    <a href="https://github.com/ansonwonggg/app-modal/blob/main/LICENSE"><img
             src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License"></a>
     <br>
 </p>
@@ -62,12 +62,12 @@ const Page = () => {
 }
 ```
 
-More examples can found in [here](https://github.com/ansonwonggg/app-modal/tree/main/examples).
+More examples can find in [here](https://github.com/ansonwonggg/app-modal/tree/main/examples/react).
 
 ## Motivation
 
-It is often we need to pop-up some important messages or dialogs to let user confirms for further actions. When you happen to have many pages and they both need the same dialog, you may need to embed the shared component in each page you needed. 
+It's common to need pop-up messages or dialogs for user confirmations before proceeding with actions. When you have multiple pages that require the same dialog, you might find yourself embedding the same component in each one.
 
-And it comes a issue, can we make it globally and so that we can trigger any place in your pages and at the same not re-render your entire applications?
+This raises a challenge: can we implement a global solution that allows us to trigger the dialog from anywhere on the pages without re-rendering the entire application?
 
-Probably we all think about using state management library like Redux, or Immer. However, I do hate writing boilerplate. And that how `React App Modal` born. It try to get rid of boilerplate and let you easily trigger, update and change Modal content in just one function with React Hook.
+Many of us might consider using state management libraries like Redux or Immer, but I find writing boilerplate code tedious. This is where `React App Modal` comes in. It eliminates boilerplate and allows you to easily trigger, update, and modify modal content with a single function using React Hooks.

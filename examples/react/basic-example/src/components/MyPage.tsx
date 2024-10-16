@@ -14,7 +14,7 @@ const MyPage = (): JSX.Element => {
 				onClick={() => updateAndTrigger(ref.current?.value || '')}
 				type='button'
 			>
-				Click to Say Hello
+				Say Hello
 			</button>
 		</>
 	);
